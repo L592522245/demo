@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>收货地址</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="stylesheet" href="css/amazeui.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+
+    <body>
+        <header class="header am-header-fixed">
+            <a href="javascript:history.go(-1)" class="search__a"><i class="am-icon-angle-left mr5"></i>返回</a>
+            <div class="logo">
+                <div class="logo__box">
+                    <p class="logo__p">收货地址</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="m-main">
+            <!--没有地址-->
+            <!--
+            <div class="no-address">
+                <p>没有地址？</p>
+                <a href="add-address.html">新建地址</a>
+            </div>
+            -->
+            <!--配送地址-->
+            <div class="address-item">
+                <div class="address-body">
+                    <div class="flex1">
+                        <div class="info">
+                            <span class="l">xxx</span>
+                            <span class="r">133******21</span>
+                        </div>
+                        <div class="address">
+                            <span>广东省深圳市龙岗区*********************</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-items__operate">
+                    <a href="add-address.html" class="o-items-btn">编辑</a>
+                    <a href="javascript:;" class="o-items-btn address-delete">删除</a>
+                </div>
+            </div>
+            <div class="address-item">
+                <div class="address-body">
+                    <div class="flex1">
+                        <div class="info">
+                            <span class="l">xxx</span>
+                            <span class="r">133******21</span>
+                        </div>
+                        <div class="address">
+                            <span>广东省深圳市龙岗区*********************</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-items__operate">
+                    <a href="add-address.html" class="o-items-btn">编辑</a>
+                    <a href="javascript:;" class="o-items-btn address-delete">删除</a>
+                </div>
+            </div>
+        </div>
+
+        <!--底部菜单栏-->
+        <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
+            <div class="sc-navbar">
+                <a href="add-address.html" class="add-address">
+                    <img src="img/add.png" alt="">
+                    <span>新建收货地址</span>
+                </a>
+            </div>
+        </div>
+        <!--删除地址-->
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="delete-adress">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">删除地址？</div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
+        <!--信息提示框-->
+        <section class="popup-box">
+            <div class="popup">
+                <img src="img/check.png" alt="">
+                <p></p>
+            </div>
+        </section>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/amazeui.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

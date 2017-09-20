@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>待付款</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <link rel="stylesheet" href="css/amazeui.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+
+    <body>
+        <header class="header am-header-fixed">
+            <a href="user.html" class="search__a"><i class="am-icon-angle-left mr5"></i>返回</a>
+            <div class="logo">
+                <div class="logo__box">
+                    <p class="logo__p">待付款</p>
+                </div>
+            </div>
+        </header>
+        <section class="o-main">
+            <div class="am-tabs">
+                <ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify o-tabs">
+                    <li><a href="orders.html"><span>全部</span></a></li>
+                    <li class="am-active"><a href="unpay.html"><span>待付款</span></a></li>
+                    <li><a href="not-send.html"><span>待发货</span></a></li>
+                    <li><a href="receive.html"><span>待收货</span></a></li>
+                </ul>
+                <div class="am-tabs-bd o-tabs-content">
+                    <div class="am-tab-panel am-active o-tabs__panel">
+                        <!--订单列表-->
+                        <div class="o-items">
+                            <div class="o-items__header">
+                                <span class="o-shop-icon"></span>
+                                <a href="javascript:;" class="o-shop-name tof">
+                                    <span class="tof">xxx店</span>
+                                    <i class="am-icon-angle-right"></i>
+                                </a>
+                                <span class="o-items__state r">等待买家付款</span>
+                            </div>
+                            <div class="o-items__body">
+                                <a href="product-detail.html">
+                                    <img src="img/14967125560018659400891627967208.jpg" alt="" class="o-items__img">
+                                </a>
+                                <div class="o-items__name">
+                                    <a href="product-detail.html" class="box2">产品产品产品产品产品产品产品产品产品产品产品</a>
+                                </div>
+                                <div class="o-items__info">
+                                    <p class="o-items__info--money">￥213.00</p>
+                                    <p class="o-items__info--count">x1</p>
+                                </div>
+                            </div>
+                            <div class="o-items__footer">
+                                <span class="o-items__money">合计：<strong>￥213.00</strong></span>
+                            </div>
+                            <div class="o-items__operate">
+                                <a href="javascript:;" class="o-items-btn orders-cancel">取消订单</a>
+                                <a href="pay.html" class="o-items-btn orders-pay">付款</a>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="load-more__btn">
+                                没有了
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--信息提示框-->
+        <section class="popup-box">
+            <div class="popup">
+                <img src="img/check.png" alt="">
+                <p></p>
+            </div>
+        </section>
+        <!--取消订单-->
+        <div class="am-modal am-modal-confirm" tabindex="-1" id="cancel-order">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">取消订单？</div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+                    <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/amazeui.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
