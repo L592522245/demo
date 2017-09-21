@@ -1730,6 +1730,9 @@ html,body {
     top: 0;
     right: 5px;
 }
+.buy-product {
+	display: none;
+}
 .buy-product .am-modal-actions-group {
     margin: 0;
 }

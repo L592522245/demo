@@ -6,27 +6,29 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>作品demo</title>
+    <title>移动端作品demo</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
-<body>
-    <section>
-        <ul>
-            <li>
-                <a href="demo1/index.html" target="_blank" class="link">
-                    <img src="img/demo1.png">
-                    <p>demo1</p>
-                </a>
-            </li>
-            <li>
-                <a href="mobile.html" target="_blank" class="link">
-                    <img src="img/demo2.png">
-                    <p>demo2</p>
-                </a>
-            </li>
-        </ul>
-    </section>
+</head>
+<body id="mobile">
+	<section>
+		<div class="outer-content">
+			<div class="inner-content">
+				<iframe id="iframe" src="demo2/index.html" ></iframe>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var iframe = document.getElementById("iframe");
+		var iwin = iframe.contentWindow;
+		var doc = iwin.document;
+		iwin.onscroll = function () {
+			var t = doc.documentElement.scrollTop || doc.body.scrollTop;
+			console.log(t);
+		};
+	</script>
 </body>
 </html>
